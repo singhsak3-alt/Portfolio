@@ -2,7 +2,7 @@ import Link from "next/link";
 import { HoverLift } from "@/components/hover-lift";
 import { ProjectCaption } from "@/components/project-caption";
 import { ProjectMedia } from "@/components/project-media";
-import type { Project } from "@/lib/projects";
+import { WORK_CARD_COPY, type Project } from "@/lib/projects";
 
 export function ProjectCard({
   project,
@@ -13,6 +13,8 @@ export function ProjectCard({
   mediaClassName?: string;
   className?: string;
 }) {
+  const copy = WORK_CARD_COPY[project.slug];
+
   return (
     <Link
       href={`/work/${project.slug}`}
@@ -21,12 +23,17 @@ export function ProjectCard({
       <HoverLift className="w-full">
         <ProjectMedia
           media={project.media}
-          alt={project.title}
+          alt={copy?.name ?? project.title}
           className={mediaClassName}
         />
       </HoverLift>
 
-      <ProjectCaption title={project.title} tags={project.tags} className="mt-6" />
+      <ProjectCaption
+        title={copy?.name ?? project.title}
+        description={copy?.description}
+        tags={project.tags}
+        className="mt-6"
+      />
     </Link>
   );
 }

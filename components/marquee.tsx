@@ -1,5 +1,5 @@
 const MARQUEE_ITEMS = [
-  "SAAS Platform",
+  "SaaS Platform",
   "Blockchain",
   "Web & Mobile App",
   "Motion Design",

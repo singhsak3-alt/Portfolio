@@ -12,7 +12,7 @@ export const EDUCATION: Education[] = [
     degree: "Post Graduate Diploma in Animation & Visual Design",
     period: "March 2010 – March 2013",
     location: "Pune, India",
-    logo: { src: "/about/mit-institute-of-design.png", width: 113, height: 104 },
+    logo: { src: "/about/mit-institute-of-design.webp", width: 113, height: 104 },
   },
   {
     school: "College of Art & Craft, Patna University",

@@ -1,12 +1,12 @@
 export const SWASH_HERO = {
-  src: "/projects/swash/swash_hero_imaeg.png",
+  src: "/projects/swash/swash_hero_imaeg.webp",
   width: 1440,
   height: 708,
 };
 
 export const SWASH_PROCESS = {
   image: {
-    src: "/projects/swash/swash_dp.png",
+    src: "/projects/swash/swash_dp.webp",
     width: 319,
     height: 330,
   },
@@ -31,7 +31,7 @@ export const SWASH_PROCESS = {
 };
 
 export const SWASH_BANNER_1 = {
-  src: "/projects/swash/swash_banner_1.png",
+  src: "/projects/swash/swash_banner_1.webp",
   width: 1440,
   height: 1627,
 };
@@ -39,14 +39,14 @@ export const SWASH_BANNER_1 = {
 export const SWASH_FLOW = {
   heading: "Clarity and Efficiency Flow",
   images: [
-    { src: "/projects/swash/swash_flow_1.png", width: 1437, height: 727 },
-    { src: "/projects/swash/swash_flow_2.png", width: 1437, height: 823 },
+    { src: "/projects/swash/swash_flow_1.webp", width: 1437, height: 727 },
+    { src: "/projects/swash/swash_flow_2.webp", width: 1437, height: 823 },
   ],
 };
 
 export const SWASH_GRID = {
   heading: "Precision Design with Grid",
-  image: { src: "/projects/swash/swash_grid.png", width: 1440, height: 820 },
+  image: { src: "/projects/swash/swash_grid.webp", width: 1440, height: 820 },
 };
 
 export const SWASH_BRANDING = {
@@ -58,13 +58,13 @@ export const SWASH_BRANDING = {
     "These are the words that the brand wants to be associated with its image and identity.",
   ],
   images: [
-    { src: "/projects/swash/swash_bd_1.png", width: 388, height: 304 },
-    { src: "/projects/swash/swash_bd_2.png", width: 309, height: 307 },
+    { src: "/projects/swash/swash_bd_1.webp", width: 388, height: 304 },
+    { src: "/projects/swash/swash_bd_2.webp", width: 309, height: 307 },
   ],
 };
 
 export const SWASH_BANNER_2 = {
-  src: "/projects/swash/swash_banner_2.png",
+  src: "/projects/swash/swash_banner_2.webp",
   width: 794,
   height: 379,
 };
@@ -85,25 +85,25 @@ export const SWASH_TYPOGRAPHY = {
 export const SWASH_COLORS = {
   heading: "Colors",
   images: [
-    { src: "/projects/swash/swash_colors_1.png", width: 1186, height: 2348 },
-    { src: "/projects/swash/swash_colors_2.png", width: 1190, height: 2366 },
-    { src: "/projects/swash/swash_colors_3.png", width: 1186, height: 2354 },
+    { src: "/projects/swash/swash_colors_1.webp", width: 1186, height: 2348 },
+    { src: "/projects/swash/swash_colors_2.webp", width: 1190, height: 2366 },
+    { src: "/projects/swash/swash_colors_3.webp", width: 1186, height: 2354 },
   ],
   image2: { src: "/projects/swash/swash_colors_4.svg", width: 1262, height: 321 },
 };
 
 export const SWASH_DESIGN_SYSTEM = {
   heading: "Design System",
-  image: { src: "/projects/swash/swash_ds.png", width: 1255, height: 1098 },
+  image: { src: "/projects/swash/swash_ds.webp", width: 1255, height: 1098 },
 };
 
 export const SWASH_UI_SCREENS = {
   heading: "UI Screens",
   images: [
-    { src: "/projects/swash/swash_banner_3.png", width: 1425, height: 3481 },
-    { src: "/projects/swash/swash_banner_4.png", width: 1440, height: 1142 },
-    { src: "/projects/swash/swash_banner_5.png", width: 1248, height: 2524 },
-    { src: "/projects/swash/swash_banner_7.png", width: 1440, height: 976 },
+    { src: "/projects/swash/swash_banner_3.webp", width: 1425, height: 3481 },
+    { src: "/projects/swash/swash_banner_4.webp", width: 1440, height: 1142 },
+    { src: "/projects/swash/swash_banner_5.webp", width: 1248, height: 2524 },
+    { src: "/projects/swash/swash_banner_7.webp", width: 1440, height: 976 },
   ],
 };
 

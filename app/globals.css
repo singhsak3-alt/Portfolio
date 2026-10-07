@@ -4,7 +4,8 @@
    manually, instead of `prefers-color-scheme`. */
 @custom-variant dark (&:where([data-theme="dark"], [data-theme="dark"] *));
 
-:root {
+:root,
+[data-theme="light"] {
   --background: #ffffff;
   --foreground: #0a0a0a;
 
@@ -57,7 +58,7 @@
   --radius-md: var(--radius);
   --radius-lg: calc(var(--radius) + 0.25rem);
 
-  --font-sans: var(--font-geist-sans);
+  --font-sans: var(--font-bricolage);
   --font-mono: var(--font-geist-mono);
 }
 

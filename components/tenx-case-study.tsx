@@ -573,15 +573,9 @@ export function TenxCaseStudy() {
               const textBlock = (
                 <HoverLift className="mx-auto w-fit max-w-[32rem]">
                   <div className="rounded-[20px] bg-muted p-6">
-                    {item.body ? (
-                      <p className="text-lg leading-relaxed text-foreground sm:text-xl">
-                        {item.body}
-                      </p>
-                    ) : (
-                      <p className="text-lg leading-relaxed text-muted-foreground sm:text-xl">
-                        Copy coming soon
-                      </p>
-                    )}
+                    <p className="text-lg leading-relaxed text-foreground sm:text-xl">
+                      {item.body}
+                    </p>
                   </div>
                 </HoverLift>
               );

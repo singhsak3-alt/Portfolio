@@ -21,8 +21,8 @@ export default function Contact() {
 
           <ScrollReveal delay={0.15}>
             <p className="mt-8 max-w-xl text-lg text-muted-foreground">
-              Contact us to discuss business opportunities, or just to say
-              hello. Use the form below or send us an email at{" "}
+              Get in touch to discuss business opportunities, or just to say
+              hello. Send me an email at{" "}
               <a
                 href="mailto:info@csdn.design"
                 className="text-foreground transition-colors hover:text-[#FF5D64]"

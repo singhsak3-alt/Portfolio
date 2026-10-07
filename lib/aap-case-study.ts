@@ -1,6 +1,6 @@
 export const AAP_HERO = {
   banner: {
-    src: "/projects/aap/app_prep_hero_image.png",
+    src: "/projects/aap/app_prep_hero_image.webp",
     width: 5760,
     height: 3900,
   },
@@ -24,14 +24,14 @@ export const AAP_DESIGN_ROLES = [
 ];
 
 export const AAP_BANNER_1 = {
-  src: "/projects/aap/app_prep_banner_1.png",
+  src: "/projects/aap/app_prep_banner_1.webp",
   width: 5760,
   height: 3152,
 };
 
 export const AAP_BANNERS_ROW = [
-  { src: "/projects/aap/app_prep_banner_2.png", width: 2917, height: 2462 },
-  { src: "/projects/aap/app_prep_banner_3.png", width: 2250, height: 2462 },
+  { src: "/projects/aap/app_prep_banner_2.webp", width: 2917, height: 2462 },
+  { src: "/projects/aap/app_prep_banner_3.webp", width: 2250, height: 2462 },
 ];
 
 export const AAP_DESIGN_THINKING = {
@@ -115,7 +115,7 @@ export const AAP_SOLUTIONS: AapResearchCard[] = [
 export const AAP_MEANINGFUL_FINDINGS = {
   heading: "Meaningful Findings",
   image: {
-    src: "/projects/aap/app_prep_meaningful_findings.png",
+    src: "/projects/aap/app_prep_meaningful_findings.webp",
     width: 4521,
     height: 2828,
   },
@@ -124,13 +124,13 @@ export const AAP_MEANINGFUL_FINDINGS = {
 export const AAP_DEFINED = {
   heading: "Defined",
   personas: [
-    { src: "/projects/aap/app_prep_personal_1.png", width: 4600, height: 3864 },
-    { src: "/projects/aap/app_prep_personal_2.png", width: 4676, height: 3444 },
+    { src: "/projects/aap/app_prep_personal_1.webp", width: 4600, height: 3864 },
+    { src: "/projects/aap/app_prep_personal_2.webp", width: 4676, height: 3444 },
   ],
   empathyHeading: "Empathy Mapping",
   empathyMaps: [
-    { src: "/projects/aap/app_prep_empathy_map_1.png", width: 4688, height: 3028 },
-    { src: "/projects/aap/app_prep_empathy_map_2.png", width: 5128, height: 2948 },
+    { src: "/projects/aap/app_prep_empathy_map_1.webp", width: 4688, height: 3028 },
+    { src: "/projects/aap/app_prep_empathy_map_2.webp", width: 5128, height: 2948 },
   ],
 };
 
@@ -191,21 +191,21 @@ export const AAP_USER_JOURNEY = {
 };
 
 export const AAP_FLOWS = [
-  { src: "/projects/aap/app_prep_flow_1.png", width: 5760, height: 5160 },
-  { src: "/projects/aap/app_prep_flow_2.png", width: 5760, height: 7328 },
+  { src: "/projects/aap/app_prep_flow_1.webp", width: 5760, height: 5160 },
+  { src: "/projects/aap/app_prep_flow_2.webp", width: 5760, height: 7328 },
 ];
 
 export const AAP_HOME_SCREEN = {
   heading: "Home Screen",
-  image: { src: "/projects/aap/app_prep_banner_4.png", width: 1440, height: 1026 },
+  image: { src: "/projects/aap/app_prep_banner_4.webp", width: 1440, height: 1026 },
 };
 
 export const AAP_DASHBOARD = {
   heading: "Dashboard My Bank",
   images: [
-    { src: "/projects/aap/app_prep_banner_5.png", width: 1440, height: 1020 },
-    { src: "/projects/aap/app_prep_banner_6.png", width: 1440, height: 866 },
-    { src: "/projects/aap/app_prep_banner_7.png", width: 1440, height: 2283 },
+    { src: "/projects/aap/app_prep_banner_5.webp", width: 1440, height: 1020 },
+    { src: "/projects/aap/app_prep_banner_6.webp", width: 1440, height: 866 },
+    { src: "/projects/aap/app_prep_banner_7.webp", width: 1440, height: 2283 },
   ],
 };
 
@@ -238,7 +238,7 @@ export const AAP_TYPOGRAPHY = {
 
 export const AAP_GRID_SYSTEM = {
   heading: "Grid System",
-  banner: { src: "/projects/aap/app_prep_banner_8.png", width: 5760, height: 3520 },
+  banner: { src: "/projects/aap/app_prep_banner_8.webp", width: 5760, height: 3520 },
 };
 
 export const AAP_UI_KIT = {
@@ -253,8 +253,8 @@ export const AAP_UI_KIT = {
 };
 
 export const AAP_ICON_BANNERS = [
-  { src: "/projects/aap/app_prep_icon_banner_1.png", width: 2096, height: 2345 },
-  { src: "/projects/aap/app_prep_icon_banner_2.png", width: 3088, height: 2340 },
+  { src: "/projects/aap/app_prep_icon_banner_1.webp", width: 2096, height: 2345 },
+  { src: "/projects/aap/app_prep_icon_banner_2.webp", width: 3088, height: 2340 },
 ];
 
 export const AAP_BANNER_9: { src: string; width: number; height: number } | null = null;
@@ -263,42 +263,42 @@ export const AAP_BUTTONS = {
   heading: "Buttons",
   body: "Buttons are interactive elements that guide users to take action. They exist in multiple styles and sizes to ensure consistency and flexibility across the interface. Each type is optimized for different use cases, from primary calls-to-action to secondary support actions.",
   images: [
-    { src: "/projects/aap/app_prep_banner_10.png", width: 5760, height: 5136 },
-    { src: "/projects/aap/app_prep_banner_11.png", width: 5760, height: 2924 },
+    { src: "/projects/aap/app_prep_banner_10.webp", width: 5760, height: 5136 },
+    { src: "/projects/aap/app_prep_banner_11.webp", width: 5760, height: 2924 },
   ],
 };
 
 export const AAP_COMPONENTS = {
   heading: "Components",
   body: "Components are the building blocks of the interface. They ensure consistency, reusability, and scalability across the design system. From product cards and sticky bars to modals and bottom sheets, these components support key user interactions and streamline the overall experience.",
-  image: { src: "/projects/aap/app_prep_banner_12.png", width: 5760, height: 2140 },
+  image: { src: "/projects/aap/app_prep_banner_12.webp", width: 5760, height: 2140 },
 };
 
 export const AAP_STICKY_TOAST = {
   heading: "Sticky Toast Bar",
   body: "A lightweight, non-intrusive notification that appears temporarily at the bottom of the screen to confirm an action or provide quick feedback, without interrupting the user's workflow.",
-  image: { src: "/projects/aap/app_prep_banner_13.png", width: 5760, height: 3116 },
+  image: { src: "/projects/aap/app_prep_banner_13.webp", width: 5760, height: 3116 },
 };
 
 export const AAP_DRAWER = {
   heading: "Drawer",
-  image: { src: "/projects/aap/app_prep_banner_14.png", width: 5760, height: 2320 },
+  image: { src: "/projects/aap/app_prep_banner_14.webp", width: 5760, height: 2320 },
 };
 
 export const AAP_MODAL = {
   heading: "Modal",
   body: "A focused overlay that captures user attention for critical actions or information, temporarily blocking interaction with the rest of the interface until a decision is made.",
-  image: { src: "/projects/aap/app_prep_banner_15.png", width: 5760, height: 6112 },
+  image: { src: "/projects/aap/app_prep_banner_15.webp", width: 5760, height: 6112 },
 };
 
 export const AAP_CARDS = [
   {
     heading: "Product Card",
-    image: { src: "/projects/aap/app_prep_banner_16.png", width: 2088, height: 1672 },
+    image: { src: "/projects/aap/app_prep_banner_16.webp", width: 2088, height: 1672 },
   },
   {
     heading: "Card Carousel",
-    image: { src: "/projects/aap/app_prep_banner_17.png", width: 3308, height: 1672 },
+    image: { src: "/projects/aap/app_prep_banner_17.webp", width: 3308, height: 1672 },
   },
 ];
 

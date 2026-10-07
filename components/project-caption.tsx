@@ -1,10 +1,12 @@
 export function ProjectCaption({
   title,
   tags,
+  description,
   className,
 }: {
   title?: string;
   tags?: string;
+  description?: string;
   className?: string;
 }) {
   return (
@@ -15,9 +17,25 @@ export function ProjectCaption({
         </h3>
       )}
 
-      {tags && (
-        <p className="mt-3 text-sm text-muted-foreground">{tags}</p>
+      {description && (
+        <p className="mt-3 text-base text-muted-foreground">{description}</p>
       )}
+
+      {tags &&
+        (description ? (
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {tags.split(" · ").map((tag) => (
+              <li
+                key={tag}
+                className="rounded-full border border-border px-3 py-1 text-xs text-muted-foreground"
+              >
+                {tag}
+              </li>
+            ))}
+          </ul>
+        ) : (
+          <p className="mt-3 text-sm text-muted-foreground">{tags}</p>
+        ))}
 
       <span className="mt-4 inline-flex items-center gap-2 text-sm text-foreground transition-colors group-hover:text-[#FF5D64]">
         <span>Read more</span>

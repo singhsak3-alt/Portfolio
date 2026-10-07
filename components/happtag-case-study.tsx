@@ -72,17 +72,7 @@ function ResearchCardView({ card }: { card: ResearchCard }) {
   );
 }
 
-function BrandBox({ box, className = "" }: { box: BrandDetailBox | null; className?: string }) {
-  if (!box) {
-    return (
-      <div
-        className={`min-h-32 rounded-[20px] border border-dashed border-border p-8 ${className}`}
-      >
-        <p className="text-sm text-muted-foreground">Copy coming soon</p>
-      </div>
-    );
-  }
-
+function BrandBox({ box, className = "" }: { box: BrandDetailBox; className?: string }) {
   const textColor = box.light ? "text-white" : "text-foreground";
   const mutedTextColor = box.light ? "text-white/70" : "text-foreground/70";
 
@@ -424,9 +414,9 @@ export function HapptagCaseStudy() {
             <ScrollReveal delay={0.05} className="flex flex-col gap-6">
               <BrandBox box={HAPPTAG_BRAND_DETAIL.boxes[0]} />
               <BrandBox box={HAPPTAG_BRAND_DETAIL.boxes[1]} />
-              <div className="flex gap-6">
-                <BrandBox box={HAPPTAG_BRAND_DETAIL.boxes[2]} className="flex-[3]" />
-                <BrandBox box={HAPPTAG_BRAND_DETAIL.boxes[3]} className="flex-[2]" />
+              <div className="flex flex-col gap-6 sm:flex-row">
+                <BrandBox box={HAPPTAG_BRAND_DETAIL.boxes[2]} className="min-w-0 flex-[3]" />
+                <BrandBox box={HAPPTAG_BRAND_DETAIL.boxes[3]} className="min-w-0 flex-[2]" />
               </div>
             </ScrollReveal>
           </div>

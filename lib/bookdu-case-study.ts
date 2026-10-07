@@ -1,5 +1,5 @@
 export const BOOKDU_HERO = {
-  src: "/projects/bookdu/bookdu_hero_image.png",
+  src: "/projects/bookdu/bookdu_hero_image.webp",
   width: 5760,
   height: 3600,
 };
@@ -14,7 +14,7 @@ export const BOOKDU_META = {
 export const BOOKDU_INTRO = {
   body: "Easy to use holistic knowledge platform offers ebooks and audio video player reader as a service RWS and journals",
   image: {
-    src: "/projects/bookdu/booku_banner_1.png",
+    src: "/projects/bookdu/booku_banner_1.webp",
     width: 2720,
     height: 2706,
   },
@@ -161,9 +161,9 @@ export const BOOKDU_BENTO: {
   rightBottom: BookduImage | null;
 } = {
   heading: "Empathize",
-  left: { src: "/projects/bookdu/booku_banner_2.png", width: 1972, height: 4436 },
-  rightTop: { src: "/projects/bookdu/booku_flow_1.png", width: 2720, height: 2236 },
-  rightBottom: { src: "/projects/bookdu/booku_flow_2.png", width: 2720, height: 2006 },
+  left: { src: "/projects/bookdu/booku_banner_2.webp", width: 1972, height: 4436 },
+  rightTop: { src: "/projects/bookdu/booku_flow_1.webp", width: 2720, height: 2236 },
+  rightBottom: { src: "/projects/bookdu/booku_flow_2.webp", width: 2720, height: 2006 },
 };
 
 export const BOOKDU_USER_INTERVIEW = {
@@ -202,16 +202,16 @@ export const BOOKDU_USER_INTERVIEW = {
 export const BOOKDU_DEFINE = {
   heading: "Define",
   images: [
-    { src: "/projects/bookdu/booku_personal_1.png", width: 4964, height: 2860 },
-    { src: "/projects/bookdu/booku_personal_2.png", width: 4937, height: 2788 },
+    { src: "/projects/bookdu/booku_personal_1.webp", width: 4964, height: 2860 },
+    { src: "/projects/bookdu/booku_personal_2.webp", width: 4937, height: 2788 },
     {
-      src: "/projects/bookdu/booku_empathy_mapping.png",
+      src: "/projects/bookdu/booku_empathy_mapping.webp",
       width: 5760,
       height: 2532,
       heading: "Empathy Mapping",
     },
     {
-      src: "/projects/bookdu/booku_journey_mapping.png",
+      src: "/projects/bookdu/booku_journey_mapping.webp",
       width: 5600,
       height: 3592,
       heading: "Journey Mapping",
@@ -219,25 +219,25 @@ export const BOOKDU_DEFINE = {
         "Scenario: Most book readers are transformed to digital. Search for the best app with a good user experience and necessary features which gives them a good reading experience and a smooth exit process.",
     },
     {
-      src: "/projects/bookdu/booku_site_map_1.png",
+      src: "/projects/bookdu/booku_site_map_1.webp",
       width: 5688,
       height: 2628,
       heading: "Site Map",
     },
     {
-      src: "/projects/bookdu/booku_site_map_2.png",
+      src: "/projects/bookdu/booku_site_map_2.webp",
       width: 5760,
       height: 1592,
       heading: "User Flow B2B",
     },
     {
-      src: "/projects/bookdu/booku_site_map_3.png",
+      src: "/projects/bookdu/booku_site_map_3.webp",
       width: 5760,
       height: 1656,
       heading: "User Flow B2C",
     },
     {
-      src: "/projects/bookdu/booku_mifi.png",
+      src: "/projects/bookdu/booku_mifi.webp",
       width: 5760,
       height: 8606,
       heading: "Mid Fidelity",
@@ -277,13 +277,13 @@ export const BOOKDU_VISUAL_DESIGN = {
       heading: "Icons",
     },
     {
-      src: "/projects/bookdu/booku_vd_5.png",
+      src: "/projects/bookdu/booku_vd_5.webp",
       width: 5600,
       height: 2278,
       heading: "Illustrations",
     },
     {
-      src: "/projects/bookdu/booku_vd_6.png",
+      src: "/projects/bookdu/booku_vd_6.webp",
       width: 5760,
       height: 2708,
       heading: "Design System",
@@ -293,18 +293,18 @@ export const BOOKDU_VISUAL_DESIGN = {
 
 export const BOOKDU_BRAND_IDENTITY = {
   heading: "Brand Identity",
-  image: { src: "/projects/bookdu/booku_brand_1.png", width: 5760, height: 2479 },
+  image: { src: "/projects/bookdu/booku_brand_1.webp", width: 5760, height: 2479 },
 };
 
 export const BOOKDU_HOME_SCREEN = {
   heading: "Home Screen",
   images: [
-    { src: "/projects/bookdu/booku_design_1.png", width: 5760, height: 4096 },
-    { src: "/projects/bookdu/booku_design_2.png", width: 5760, height: 8192 },
-    { src: "/projects/bookdu/booku_design_3.png", width: 5760, height: 5119 },
-    { src: "/projects/bookdu/booku_design_4.png", width: 5760, height: 4088 },
-    { src: "/projects/bookdu/booku_design_5.png", width: 5760, height: 3152 },
-    { src: "/projects/bookdu/booku_design_6.png", width: 5760, height: 1499 },
+    { src: "/projects/bookdu/booku_design_1.webp", width: 5760, height: 4096 },
+    { src: "/projects/bookdu/booku_design_2.webp", width: 5760, height: 8192 },
+    { src: "/projects/bookdu/booku_design_3.webp", width: 5760, height: 5119 },
+    { src: "/projects/bookdu/booku_design_4.webp", width: 5760, height: 4088 },
+    { src: "/projects/bookdu/booku_design_5.webp", width: 5760, height: 3152 },
+    { src: "/projects/bookdu/booku_design_6.webp", width: 5760, height: 1499 },
   ],
 };
 

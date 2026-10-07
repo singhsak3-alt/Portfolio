@@ -3,6 +3,10 @@ import { notFound } from "next/navigation";
 import { AapCaseStudy } from "@/components/aap-case-study";
 import { BookduCaseStudy } from "@/components/bookdu-case-study";
 import { PrepmyskillsCaseStudy } from "@/components/prepmyskills-case-study";
+import { ArisUniternCaseStudy } from "@/components/aris-unitern-case-study";
+import { ZaveCaseStudy } from "@/components/zave-case-study";
+import { IllustrationCaseStudy } from "@/components/illustration-case-study";
+import { SketchingCaseStudy } from "@/components/sketching-case-study";
 import { NexaCaseStudy } from "@/components/nexa-case-study";
 import { SwashCaseStudy } from "@/components/swash-case-study";
 import { HapptagCaseStudy } from "@/components/happtag-case-study";
@@ -57,6 +61,22 @@ export default async function ProjectPage({
 
   if (project.slug === "swash") {
     return <SwashCaseStudy />;
+  }
+
+  if (project.slug === "zave") {
+    return <ZaveCaseStudy />;
+  }
+
+  if (project.slug === "aris-unitern") {
+    return <ArisUniternCaseStudy />;
+  }
+
+  if (project.slug === "illustration") {
+    return <IllustrationCaseStudy />;
+  }
+
+  if (project.slug === "sketching") {
+    return <SketchingCaseStudy />;
   }
 
   if (project.slug === "ai-platform") {

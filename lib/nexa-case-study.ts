@@ -1,5 +1,5 @@
 export const NEXA_HERO = {
-  src: "/nexa/next_hero_image.png",
+  src: "/nexa/next_hero_image.webp",
   width: 1440,
   height: 764,
 };
@@ -29,7 +29,7 @@ export const NEXA_ABOUT = {
 };
 
 export const NEXA_BANNER_1 = {
-  src: "/nexa/next_banner_1.png",
+  src: "/nexa/next_banner_1.webp",
   width: 1440,
   height: 1356,
 };
@@ -92,7 +92,7 @@ export const NEXA_PROBLEM_SOLUTION = {
 };
 
 export const NEXA_BANNER_2 = {
-  src: "/nexa/next_banner_2.png",
+  src: "/nexa/next_banner_2.webp",
   width: 1440,
   height: 1096,
 };
@@ -155,13 +155,13 @@ export const NEXA_SERVICES = [
 ];
 
 export const NEXA_HIFI = {
-  src: "/nexa/next_hifi_1.png",
+  src: "/nexa/next_hifi_1.webp",
   width: 1440,
   height: 1152,
 };
 
 const NEXA_MOCKUP_IMAGES = Array.from({ length: 9 }, (_, i) => ({
-  src: `/nexa/next_hifi_mock_img_${i + 1}.png`,
+  src: `/nexa/next_hifi_mock_img_${i + 1}.webp`,
   alt: `Nexa website mockup ${i + 1}`,
 }));
 

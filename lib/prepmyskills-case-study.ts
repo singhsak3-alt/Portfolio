@@ -1,5 +1,5 @@
 export const PREPMYSKILLS_HERO = {
-  src: "/projects/prepmyskills/prepmyskills_hero_image.png",
+  src: "/projects/prepmyskills/prepmyskills_hero_image.webp",
   width: 1589,
   height: 860,
 };
@@ -20,64 +20,64 @@ export const PREPMYSKILLS_DESIGN_PROCESS = {
   heading: "Design Process",
   images: [
     {
-      src: "/projects/prepmyskills/prepmyskills_design_process.png",
+      src: "/projects/prepmyskills/prepmyskills_design_process.webp",
       width: 5856,
       height: 5434,
       mobile: {
-        src: "/projects/prepmyskills/prepmyskills_design_process_mob.png",
+        src: "/projects/prepmyskills/prepmyskills_design_process_mob.webp",
         width: 1504,
         height: 6356,
       },
     },
     {
-      src: "/projects/prepmyskills/prepmyskills_pt.png",
+      src: "/projects/prepmyskills/prepmyskills_pt.webp",
       width: 1440,
       height: 1005,
       mobile: {
-        src: "/projects/prepmyskills/prepmyskills_pt_mob.png",
+        src: "/projects/prepmyskills/prepmyskills_pt_mob.webp",
         width: 1600,
         height: 5032,
       },
     },
     {
-      src: "/projects/prepmyskills/prepmyskills_em.png",
+      src: "/projects/prepmyskills/prepmyskills_em.webp",
       width: 5760,
       height: 4504,
       mobile: {
-        src: "/projects/prepmyskills/prepmyskills_em_mob.png",
+        src: "/projects/prepmyskills/prepmyskills_em_mob.webp",
         width: 1600,
         height: 5032,
       },
     },
     {
-      src: "/projects/prepmyskills/prepmyskills_up.png",
+      src: "/projects/prepmyskills/prepmyskills_up.webp",
       width: 1440,
       height: 1254,
       mobile: {
-        src: "/projects/prepmyskills/prepmyskills_up_mob.png",
+        src: "/projects/prepmyskills/prepmyskills_up_mob.webp",
         width: 1600,
         height: 5032,
       },
     },
     {
-      src: "/projects/prepmyskills/prepmyskills_sg.png",
+      src: "/projects/prepmyskills/prepmyskills_sg.webp",
       width: 1440,
       height: 1137,
       hideOnMobile: true,
     },
     {
-      src: "/projects/prepmyskills/prepmyskills_components.png",
+      src: "/projects/prepmyskills/prepmyskills_components.webp",
       width: 1436,
       height: 2532,
       mobile: {
-        src: "/projects/prepmyskills/prepmyskills_components_mob.png",
+        src: "/projects/prepmyskills/prepmyskills_components_mob.webp",
         width: 1600,
         height: 11296,
       },
     },
-    { src: "/projects/prepmyskills/prepmyskills_id_1.png", width: 1440, height: 1238 },
-    { src: "/projects/prepmyskills/prepmyskills_id_2.png", width: 1440, height: 1025 },
-    { src: "/projects/prepmyskills/prepmyskills_3.png", width: 2880, height: 6748 },
+    { src: "/projects/prepmyskills/prepmyskills_id_1.webp", width: 1440, height: 1238 },
+    { src: "/projects/prepmyskills/prepmyskills_id_2.webp", width: 1440, height: 1025 },
+    { src: "/projects/prepmyskills/prepmyskills_3.webp", width: 2880, height: 6748 },
   ],
 };
 

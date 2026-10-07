@@ -36,10 +36,16 @@ export function Nav() {
       initial={{ y: -24, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.5, ease: "easeOut" }}
+      // Case study pages ship with a fixed design theme, some of them dark,
+      // but the bar stays solid white on all of them. Pinning the light tokens
+      // on the header keeps its text, logo and mobile menu readable.
+      data-theme={isFixedThemeRoute ? "light" : undefined}
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
-        scrolled
-          ? "border-b border-border bg-background/80 backdrop-blur-md"
-          : "border-b border-transparent bg-transparent"
+        isFixedThemeRoute
+          ? "border-b border-border bg-white"
+          : scrolled
+            ? "border-b border-border bg-background/80 backdrop-blur-md"
+            : "border-b border-transparent bg-transparent"
       }`}
     >
       <div className="mx-auto flex h-16 max-w-7xl items-center justify-between px-3">
@@ -50,7 +56,7 @@ export function Nav() {
             width={289}
             height={62}
             priority
-            className="h-8 w-auto invert dark:invert-0"
+            className={`h-8 w-auto invert ${isFixedThemeRoute ? "" : "dark:invert-0"}`}
           />
         </Link>
 

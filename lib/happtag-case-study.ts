@@ -13,22 +13,22 @@ export const HAPPTAG_HERO = {
   intro:
     "Introduced in April 2025, HappTag is a compact, Bluetooth-enabled tracking device built in India. It integrates securely with the SMARTHAPPS Find My network—featuring Precision Finding, Lost Mode, and end-to-end encryption—to help users easily and privately locate personal items like keys, wallets, and bags.",
   illustration: {
-    src: "/projects/Happtag/illustration_1.png",
+    src: "/projects/Happtag/illustration_1.webp",
     width: 3476,
     height: 3704,
   },
   illustration2: {
-    src: "/projects/Happtag/illustration_2.png",
+    src: "/projects/Happtag/illustration_2.webp",
     width: 1277,
     height: 668,
   },
   illustration3: {
-    src: "/projects/Happtag/illustration_3.png",
+    src: "/projects/Happtag/illustration_3.webp",
     width: 5760,
     height: 3195,
   },
   illustration4: {
-    src: "/projects/Happtag/illustration_4.png",
+    src: "/projects/Happtag/illustration_4.webp",
     width: 1440,
     height: 1272,
   },
@@ -109,13 +109,13 @@ export const HAPPTAG_IDEATION = {
   heading: "Ideation & Concept Development",
   caption: "Conduct brainstorming and sketching sessions for app and device interaction.",
   products: [
-    { src: "/projects/Happtag/product_1.png", width: 432, height: 261 },
-    { src: "/projects/Happtag/product_2.png", width: 502, height: 261 },
-    { src: "/projects/Happtag/product_3.png", width: 499, height: 438 },
-    { src: "/projects/Happtag/product_4.png", width: 432, height: 438 },
-    { src: "/projects/Happtag/product_5.png", width: 937, height: 937 },
-    { src: "/projects/Happtag/product_6.png", width: 461, height: 461 },
-    { src: "/projects/Happtag/product_7.png", width: 461, height: 461 },
+    { src: "/projects/Happtag/product_1.webp", width: 432, height: 261 },
+    { src: "/projects/Happtag/product_2.webp", width: 502, height: 261 },
+    { src: "/projects/Happtag/product_3.webp", width: 499, height: 438 },
+    { src: "/projects/Happtag/product_4.webp", width: 432, height: 438 },
+    { src: "/projects/Happtag/product_5.webp", width: 937, height: 937 },
+    { src: "/projects/Happtag/product_6.webp", width: 461, height: 461 },
+    { src: "/projects/Happtag/product_7.webp", width: 461, height: 461 },
   ],
 };
 
@@ -162,14 +162,14 @@ export const HAPPTAG_BRAND_DETAIL = {
       color: "#5F59A3",
       light: true,
     },
-  ] satisfies (BrandDetailBox | null)[],
+  ] satisfies BrandDetailBox[],
 };
 
 export const HAPPTAG_BRANDING = {
   eyebrow: "Logo",
   heading: "Visual Design & Branding",
   logo: {
-    src: "/projects/Happtag/logo_happtag.png",
+    src: "/projects/Happtag/logo_happtag.webp",
     width: 1081,
     height: 555,
   },
@@ -251,7 +251,7 @@ export const HAPPTAG_PROTOTYPE = {
   },
   fallDetectionMedia: {
     type: "image" as const,
-    src: "/projects/Happtag/happ_tag_image_6.png",
+    src: "/projects/Happtag/happ_tag_image_6.webp",
     width: 824,
     height: 1158,
   },
@@ -267,7 +267,7 @@ export const HAPPTAG_FEATURE_BENTO = {
   ],
   // Right column: one big hero photo, same height as the left column.
   hero: {
-    src: "/projects/Happtag/feature_3.png",
+    src: "/projects/Happtag/feature_3.webp",
     width: 3612,
     height: 3237,
   },
@@ -275,14 +275,14 @@ export const HAPPTAG_FEATURE_BENTO = {
   bottomRow: [
     {
       type: "image" as const,
-      src: "/projects/Happtag/feature_4.png",
+      src: "/projects/Happtag/feature_4.webp",
       width: 1340,
       height: 1272,
       alt: "Range: 45 meters",
     },
     {
       type: "image" as const,
-      src: "/projects/Happtag/feature_5.png",
+      src: "/projects/Happtag/feature_5.webp",
       width: 1268,
       height: 1272,
       alt: "Connect via Bluetooth",
@@ -297,12 +297,12 @@ export const HAPPTAG_FEATURE_BENTO = {
 
 export const HAPPTAG_PACKAGING = {
   banner1: {
-    src: "/projects/Happtag/happ_banner_1.png",
+    src: "/projects/Happtag/happ_banner_1.webp",
     width: 5760,
     height: 2800,
   },
   banner2: {
-    src: "/projects/Happtag/happ_bannger_2.png",
+    src: "/projects/Happtag/happ_bannger_2.webp",
     width: 5120,
     height: 1680,
   },

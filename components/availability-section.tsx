@@ -37,9 +37,8 @@ export function AvailabilitySection() {
             Looking To Create A Stunning Design?
           </h2>
           <p className="mt-4 max-w-md text-lg text-muted-foreground">
-            Check out my services below — from early-stage product design to
-            full design systems, I’d love to help bring your next idea to
-            life.
+            Take a look at my work — from early-stage product design to full
+            design systems, I’d love to help bring your next idea to life.
           </p>
 
           <div className="mt-8">

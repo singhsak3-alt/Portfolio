@@ -1,36 +1,85 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Chandrashekhar — Design Portfolio
 
-## Getting Started
+Portfolio site for Chandrashekhar, a digital designer based in Bangalore, India, with 10 years of experience in UI/UX, product design, branding, illustration and interaction design. It showcases the work as a set of in-depth case studies.
 
-First, run the development server:
+Built with [Next.js](https://nextjs.org) (App Router), React, Tailwind CSS 4 and Framer Motion, and exported as a fully static site.
+
+## Pages
+
+| Route | What it is |
+| --- | --- |
+| `/` | Home: hero video, services marquee, featured projects, expertise cards |
+| `/work` | All projects, grouped by discipline |
+| `/work/[slug]` | One case study per project (see below) |
+| `/about` | About, daily tools and career timeline |
+| `/contact` | Email, phone, availability, FAQ and social links |
+
+### Case studies
+
+| Slug | Project | Page |
+| --- | --- | --- |
+| `happtag` | Happtag | Full case study |
+| `ten-x` | TenX | Full case study |
+| `aap` | PREP (American Academy of Pediatrics) | Full case study |
+| `bookdu` | BOOKDU | Full case study |
+| `prepmyskills` | PrepMySkills | Full case study |
+| `ai-platform` | NEXA | Full case study |
+| `swash` | Swash | Full case study |
+| `aris-unitern` | ArisUnitern (brand identity) | Full case study |
+| `zave` | Zave (brand identity) | Full case study |
+| `illustration` | Illustrations | Image-led page with animated hero |
+| `sketching` | Sketching | Image-led page |
+| `billd`, `uax-stake`, `interaction` | BILLD, UAX Stake, Interaction | Listed on `/work`; no detailed page yet (shows title, tags and one image) |
+
+Case study pages use a fixed theme set per project in `lib/projects.ts` (`theme: "light" | "dark"`) and don't show the site-wide light/dark toggle. The navigation bar is always white on these pages.
+
+## Getting started
 
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
+npm run dev      # http://localhost:3000
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Other scripts:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run build    # static export to ./out
+npm run lint
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+> This project uses a recent Next.js with breaking changes from older versions. See `AGENTS.md` and the docs in `node_modules/next/dist/docs/` before changing framework-level code.
 
-## Learn More
+## Project structure
 
-To learn more about Next.js, take a look at the following resources:
+```
+app/                  Routes, root layout, global styles (design tokens, animations)
+  work/[slug]/        Case study route; picks the right case study component by slug
+components/           UI sections and one *-case-study.tsx component per project
+lib/                  Content as data: lib/projects.ts (project list, work page groups,
+                      card copy) and one lib/*-case-study.ts per case study
+public/               Static assets, one folder per area:
+                      home/, about/, contact/, work/ (grid thumbnails),
+                      projects/<name>/ (case study images and video)
+.github/workflows/    GitHub Pages deployment
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Images go through `components/image.tsx`, a thin wrapper over `next/image` that adds the deployment base path. Always use it instead of `next/image` directly.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Adding or editing a case study
 
-## Deploy on Vercel
+1. Add the project to `PROJECTS` in `lib/projects.ts` (slug, title, tags, thumbnail, theme). It then shows up on the work page once its slug is listed in `WORK_GROUPS`, with its short name and description in `WORK_CARD_COPY`.
+2. Put the images in `public/projects/<name>/` and the thumbnail in `public/work/`.
+3. Write the content in `lib/<name>-case-study.ts` and the layout in `components/<name>-case-study.tsx`.
+4. Return the new component for its slug in `app/work/[slug]/page.tsx`.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Deployment
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+The site is statically exported (`output: "export"`, unoptimised images) and deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main`.
+
+- The workflow sets `BASE_PATH` automatically: empty for a `<owner>.github.io` repo, `/<repo>` for any other repo name.
+- To build locally for a project page, run `BASE_PATH=/your-repo-name npm run build`. Leave it unset for a root domain.
+- `public/.nojekyll` must stay in place so GitHub Pages serves the `_next` folder.
+
+## Contact
+
+Email: info@csdn.design · Phone: +91 93048 98229
