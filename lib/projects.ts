@@ -176,6 +176,18 @@ export const PROJECTS: Project[] = [
     theme: "light",
   },
   {
+    slug: "product-packaging",
+    title: "Product Packaging Design",
+    tags: "Packaging Design · Graphic Design",
+    media: {
+      type: "image",
+      src: "/work/product_packaging.webp",
+      width: 2480,
+      height: 2480,
+    },
+    theme: "light",
+  },
+  {
     slug: "illustration",
     title: "Illustration",
     tags: "Illustration",
@@ -230,7 +242,7 @@ export const WORK_GROUPS: { heading: string; slugs: string[] }[] = [
       "uax-stake",
     ],
   },
-  { heading: "Graphics Design / Branding", slugs: ["aris-unitern", "zave"] },
+  { heading: "Graphics Design / Branding", slugs: ["aris-unitern", "zave", "product-packaging"] },
   { heading: "Illustration / Sketching", slugs: ["illustration", "sketching"] },
   { heading: "Interaction Design / Animation", slugs: ["interaction"] },
 ];
@@ -295,6 +307,11 @@ export const WORK_CARD_COPY: Record<
     name: "Zave",
     description:
       "Brand identity and stationery design for Zave, including the logo, colour palette and business cards that carry the brand across print.",
+  },
+  "product-packaging": {
+    name: "Product Packaging",
+    description:
+      "Packaging design that turns a product into a shelf-ready experience, combining brand identity, clear information and a distinctive look that stands out in store.",
   },
   illustration: {
     name: "Illustration",

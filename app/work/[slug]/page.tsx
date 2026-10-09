@@ -9,6 +9,9 @@ import { IllustrationCaseStudy } from "@/components/illustration-case-study";
 import { SketchingCaseStudy } from "@/components/sketching-case-study";
 import { NexaCaseStudy } from "@/components/nexa-case-study";
 import { SwashCaseStudy } from "@/components/swash-case-study";
+import { BilldCaseStudy } from "@/components/billd-case-study";
+import { UaxCaseStudy } from "@/components/uax-case-study";
+import { PackagingCaseStudy } from "@/components/packaging-case-study";
 import { HapptagCaseStudy } from "@/components/happtag-case-study";
 import { TenxCaseStudy } from "@/components/tenx-case-study";
 import { ProjectMedia } from "@/components/project-media";
@@ -17,10 +20,6 @@ import { PROJECTS, getProject } from "@/lib/projects";
 export function generateStaticParams() {
   return PROJECTS.map((project) => ({ slug: project.slug }));
 }
-
-// Static export can only prerender known params — any slug outside
-// generateStaticParams() must 404 at build time rather than render on demand.
-export const dynamicParams = false;
 
 export async function generateMetadata({
   params,
@@ -61,6 +60,18 @@ export default async function ProjectPage({
 
   if (project.slug === "swash") {
     return <SwashCaseStudy />;
+  }
+
+  if (project.slug === "billd") {
+    return <BilldCaseStudy />;
+  }
+
+  if (project.slug === "uax-stake") {
+    return <UaxCaseStudy />;
+  }
+
+  if (project.slug === "product-packaging") {
+    return <PackagingCaseStudy />;
   }
 
   if (project.slug === "zave") {

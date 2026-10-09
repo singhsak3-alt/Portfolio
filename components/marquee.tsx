@@ -9,7 +9,15 @@ const MARQUEE_ITEMS = [
   "Social Media & Ads",
 ];
 
-export function Marquee() {
+export function Marquee({
+  items = MARQUEE_ITEMS,
+  className = "text-foreground",
+  dotClassName = "bg-muted-foreground",
+}: {
+  items?: string[];
+  className?: string;
+  dotClassName?: string;
+}) {
   return (
     <div className="overflow-hidden py-6">
       <div className="flex w-max animate-marquee">
@@ -19,13 +27,13 @@ export function Marquee() {
             className="flex shrink-0 items-center"
             aria-hidden={group === 1}
           >
-            {MARQUEE_ITEMS.map((item, index) => (
+            {items.map((item, index) => (
               <span
                 key={index}
-                className="mx-6 flex items-center gap-6 whitespace-nowrap text-sm font-medium tracking-wide text-foreground sm:text-base"
+                className={`mx-6 flex items-center gap-6 whitespace-nowrap text-sm font-medium tracking-wide sm:text-base ${className}`}
               >
                 {item}
-                <span className="h-1.5 w-1.5 rotate-45 bg-muted-foreground" />
+                <span className={`h-1.5 w-1.5 rotate-45 ${dotClassName}`} />
               </span>
             ))}
           </div>

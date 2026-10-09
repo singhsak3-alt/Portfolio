@@ -8,7 +8,7 @@ export const AAP_HERO = {
 
 export const AAP_ROLES = {
   headingBlack: "Roles & ",
-  headingAccent: "Responsibilitie",
+  headingAccent: "Responsibilities",
   body: "I designed a PediAssess is a mobile-first self‑assessment and clinical readiness app designed for pediatricians. The app helps doctors periodically evaluate their knowledge, diagnostic accuracy, and adherence to updated pediatric guidelines through structured assessments, case-based questions, and performance insights.",
 };
 

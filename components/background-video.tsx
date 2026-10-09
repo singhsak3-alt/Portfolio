@@ -19,13 +19,11 @@ export function BackgroundVideo({
     if (videoRef.current) videoRef.current.muted = true;
   }, []);
 
-  const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-
   return (
     <video
       ref={videoRef}
       className={className}
-      src={`${basePath}${src}`}
+      src={src}
       autoPlay
       loop
       playsInline

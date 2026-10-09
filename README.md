@@ -43,7 +43,7 @@ npm run dev      # http://localhost:3000
 Other scripts:
 
 ```bash
-npm run build    # static export to ./out
+npm run build
 npm run lint
 ```
 
@@ -60,10 +60,9 @@ lib/                  Content as data: lib/projects.ts (project list, work page 
 public/               Static assets, one folder per area:
                       home/, about/, contact/, work/ (grid thumbnails),
                       projects/<name>/ (case study images and video)
-.github/workflows/    GitHub Pages deployment
 ```
 
-Images go through `components/image.tsx`, a thin wrapper over `next/image` that adds the deployment base path. Always use it instead of `next/image` directly.
+Images go through `components/image.tsx`, a thin re-export of `next/image`.
 
 ## Adding or editing a case study
 
@@ -74,11 +73,11 @@ Images go through `components/image.tsx`, a thin wrapper over `next/image` that 
 
 ## Deployment
 
-The site is statically exported (`output: "export"`, unoptimised images) and deployed to GitHub Pages by `.github/workflows/deploy.yml` on every push to `main`.
+The site is a standard Next.js app deployed on Vercel. Pushing to `main` triggers a deployment; no extra configuration is needed.
 
-- The workflow sets `BASE_PATH` automatically: empty for a `<owner>.github.io` repo, `/<repo>` for any other repo name.
-- To build locally for a project page, run `BASE_PATH=/your-repo-name npm run build`. Leave it unset for a root domain.
-- `public/.nojekyll` must stay in place so GitHub Pages serves the `_next` folder.
+### Google Analytics
+
+GA4 (measurement ID in `app/layout.tsx`) loads on production builds only, so local development isn't counted. Page views are tracked automatically, including client-side route changes.
 
 ## Contact
 

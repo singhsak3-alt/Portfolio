@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { GoogleAnalytics } from "@next/third-parties/google";
 import { Bricolage_Grotesque, Geist_Mono } from "next/font/google";
 import { Nav } from "@/components/nav";
 import { NavCtaBadge } from "@/components/nav-cta-badge";
@@ -25,6 +26,11 @@ export const metadata: Metadata = {
     "Portfolio of Chandrashekhar, a digital designer with 10 years of experience in UI/UX design, branding, and product design across web and mobile.",
 };
 
+// GA4 measurement IDs are public (they appear in every page's source), so it
+// is safe to keep it in code. Only load it in production builds so local
+// development isn't counted.
+const GA_ID = "G-J7R1J6V2S9";
+
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
     <html
@@ -47,6 +53,7 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
         <Footer />
         <NavCtaBadge />
       </body>
+      {process.env.NODE_ENV === "production" && <GoogleAnalytics gaId={GA_ID} />}
     </html>
   );
 }
